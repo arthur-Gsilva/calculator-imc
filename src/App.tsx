@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import styles from './App.module.css'
 import { calculateIMC, level } from './helpers/calc'
 import { Result } from './components/results/results'
@@ -10,7 +10,7 @@ const App = () => {
     const [weightField, setWeightField] = useState<number>(0)
     const [toShow, setToShow] = useState<level | null>(null)
 
-    const calculate = (e: any) => {
+    const calculate = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
         if(weightField && heightField){
