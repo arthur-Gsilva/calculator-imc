@@ -8,3 +8,5 @@ Projeto feito utilizando react + typescript
 
 ### Para Rodar
 - `npm start`
+
+Para acessar basta [clicar aqui](https://calculator-imc-two.vercel.app/)
